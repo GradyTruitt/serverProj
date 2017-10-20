@@ -17,7 +17,7 @@ const detailersRoute = require('./routes/detailersRoute');
 
 const { dbUser, database, secret } = require('../config');
 const port = 3000;
-const connectionString = `postgress://${dbUser}@localhost/${database}`;
+const connectionString = `postgres://hgctpfuecutznj:15bc05ae56b76aa5ca092e41faef5e43716915314667d734342fdd61fc1a145a@ec2-54-235-250-15.compute-1.amazonaws.com:5432/d7bhkoendervhe?ssl=true`;
 
 const app = express();
 
