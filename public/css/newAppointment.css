@@ -1,0 +1,326 @@
+.form-bg {
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    background-color: #EFF0F5;
+}
+
+.form-field-top {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.cars-list{
+    margin: 7% 7% 5%;
+    padding: 0 5%;
+    background-color: white;
+    width: 76%;
+    font-family: Roboto;
+    font-size: 12pt;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15)
+}
+
+.default-option {
+    margin: 0;
+    padding: 15px 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    text-align: left;
+}
+
+.form-option {
+    margin: 0;
+    padding: 20px;
+    font-weight: 300;
+    color: #5F7584;
+    display: none;
+}
+
+.form-line {
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    background-color: #D5D5D5;
+    display: none;
+}
+
+.downarrow {
+    width: 20px;
+}
+
+.uparrow {
+    width: 20px;
+    display: none;
+}
+
+.default-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-label {
+    margin: 0;
+    padding: 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-style: italic;
+    font-family: Roboto;
+    font-size: 12pt;
+    text-align: left;
+    width: 82%;
+}
+
+.location-input {
+    margin: 3% 7% 5%;
+    padding: 15px 5%;
+    background-color: white;
+    width: 76%;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    color: #5F7584;
+    border: none;
+}
+
+.location-input::placeholder {
+    color: #5F7584;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.location-input:focus {
+    outline: none;
+}
+
+
+
+/* -------- TIMES ----------- */
+
+.times-dir {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.flex-row-2 {
+    margin:3% 7% 5%;
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 86%;
+}
+.start-times-list{
+    margin: 0;
+    padding: 0 20px;
+    background-color: white;
+    width: 35%;
+    font-family: Roboto;
+    font-size: 12pt;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+}
+
+.end-times-list{
+    margin: 0;
+    padding: 0 20px;
+    background-color: white;
+    width: 35%;
+    font-family: Roboto;
+    font-size: 12pt;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+}
+
+.time-container {
+    margin:0;
+    padding:0;
+    height: 250px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.form-option2 {
+    margin: 0;
+    padding: 20px;
+    font-weight: 300;
+    color: #5F7584;
+}
+
+.form-option3 {
+    margin: 0;
+    padding: 20px;
+    font-weight: 300;
+    color: #5F7584;
+}
+
+.form-line2 {
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    background-color: #D5D5D5;
+}
+
+.form-line3 {
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    background-color: #D5D5D5;
+}
+
+.package-title {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 14pt;
+    font-weight: 300;
+    color: #5F7584;
+}
+
+.packages{
+    margin: 3% 0;
+    width: 100%;
+}
+
+.package-align {
+    margin:0 7%;
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+}
+
+.package-divider {
+    background-color: #D5D5D5;
+    width: 100%;
+    height: 1px;
+}
+
+.check-box {
+    margin: 5% 0;
+    padding: 3%;
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15)
+}
+
+.checked {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #9CB4C4;
+    border-radius: 4px;
+    display: none;
+}
+
+.desc-container {
+    margin:0 10% 5%;
+    padding:0;
+    width: 80%;
+    display: none;
+}
+
+.package-desc {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+    color: #9CB4C4;
+    line-height: 18pt;
+}
+
+.form-label-center {
+    margin: 0;
+    padding: 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-style: italic;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 12pt;
+    text-align: center;
+    width: 82%;
+}
+
+.instructions-input {
+    margin: 3% 7% 5%;
+    padding: 15px 5% 55px;
+    background-color: white;
+    width: 76%;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    color: #5F7584;
+    border: none;
+    overflow-y: scroll;
+    resize: none;
+}
+
+.instructions-input::placeholder {
+    color: #9CB4C4;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.instructions-input:focus {
+    outline: none;
+}
+
+.buttons-container-newAppt{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.step-btn-newAppt {
+    margin: 7% 0;
+    padding: 4% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    border-radius: 10px;
+    background-color: #10EE2A;
+    cursor: pointer;
+}
+
+.next-btn-newAppt {
+    margin: 7% 0;
+    padding: 4% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    border: 1px solid #9CB4C4;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.next-btn-txt {
+    margin: 0;
+    padding: 0;
+    color: #9CB4C4;
+    font-family: Raleway;
+    font-weight: 300;
+}

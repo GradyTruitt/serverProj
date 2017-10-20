@@ -1,0 +1,35 @@
+<div class="list-bg">
+    <div class="new-appt-list">
+        <div class="top-title-align">
+            <div class="back-btn-outline" ui-sref="detailerHome">
+                <img class="backarrow" src="../assets/leftarrow.svg">
+                <div class="back-btn-txt">BACK</div>
+            </div>
+            <p class="form-label right">Job Feed</p>
+        </div>
+        <div class="box-shadow" ng-repeat="appt in newAppts track by $index" id="list-item{{$index}}">
+            <div class="new-appt-list-item">
+                <div>
+                    <div class="date-time-align">
+                        <div class="job-feed-date">{{ appt.appointmentdate.month }} {{ appt.appointmentdate.day }} &nbsp;  |  </div>
+                        <div class="job-feed-time">{{ appt.starttime }} - {{ appt.endtime }}</div>
+                    </div>
+                    <div class="job-feed-address">{{ appt.location.address }}</div>
+                    <div class="job-feed-divider"></div>
+                    <div class="job-feed-package">{{ appt.package }}</div>
+                    <div class="job-feed-instructions">{{ appt.instructions }}</div>
+                    <div class="bid-input-align" id="bid-input-container{{$index}}">
+                        <div class="job-feed-date">$</div>                            
+                        <input class="bid-input" type="number" placeholder="Bid Amount" autofocus="autofocus" id="bid-input{{$index}}">
+                    </div>
+                </div>
+            </div>
+            <div class="place-bid-btn" id="bid-btn{{$index}}" ng-click="placeBid($index)">
+                <div class="place-bid-btn-txt">PLACE BID</div>
+            </div>
+            <div class="complete-bid-btn" id="complete-bid-btn{{$index}}" ng-click="completeBid($index)">
+                <div class="complete-bid-btn-txt">PLACE BID</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="notification" id="notification-complete">
+    <div class="notification-txt">APPOINTMENT COMPLETED</div>
+</div>
+<div class="map-container">
+    <div id='map'class="map"></div>
+</div>
+<div class="bg-container">
+    <div>
+        <div class="green-map-line"></div>
+        <h2 class="welcome-back-txt">Welcome Back, {{currentUser.name}}!</h2>
+        <div class="userHome-green-line"></div>
+        <h2 class="last-appt-txt">Your last appointment was</h2>
+        <h2 class="last-appt-date" id="last-appt-date">{{ lastAppointmentMonth }}, {{ lastAppointmentDay }}</h2>
+    </div>
+        <div>
+            <div class="appt-history-align" ui-sref="userPendingBids">
+                <div></div>
+                <div class="appt-bids-btn-txt">View Bids - {{ bidCount }}</div>
+                <img class="history-rightarrow" src="../assets/rightarrow.svg">
+            </div>
+            <div class="appt-history-align" ui-sref="appointmentHistory">
+                <div></div>
+                <div class="appt-history-btn-txt">Appointment History</div>
+                <img class="history-rightarrow" src="../assets/rightarrow.svg">
+            </div>
+        </div>
+
+    <div class="schedule-now-btn" ui-sref="newappointment">
+        <div class="schedule-now-txt">SCHEDULE NOW</div>
+    </div>
+</div>

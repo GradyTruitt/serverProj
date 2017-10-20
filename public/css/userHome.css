@@ -1,0 +1,164 @@
+.map-container{
+    margin:0;
+    padding:0;
+    padding-top: 8vh;
+}
+
+.bg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EFF0F5;
+    height: 62vh;
+}
+
+.map {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30vh;
+}
+
+.mapboxgl-ctrl-group > button {
+    height: 45px;
+    width: 45px;
+    background-color: white;
+}
+
+.green-map-line {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #10EE2A;
+}
+
+.welcome-back-txt {
+    margin: 0;
+    padding: 0;
+    margin-top: 6%;
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 18pt;
+    text-align: center;
+    color: #000620;
+}
+
+.userHome-green-line{
+    margin: 3% auto;
+    padding:0;
+    width: 30%;
+    height: 2px;
+    background-color: #10EE2A;
+}
+
+.last-appt-txt{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 12pt;
+    text-align: center;
+    color: #9CB4C4;
+}
+
+.last-appt-date{
+    margin: 0;
+    padding: 0;
+    margin-top: 3%;
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 22pt;
+    text-align: center;
+    color: #000620;
+}
+
+.appt-bids-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 5%;
+    width: 90%;
+    background-color: white;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 12pt;
+    text-align: center;
+    color: #5F7584;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15)
+}
+
+.appt-history-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px 0 0;
+    padding: 5%;
+    width: 90%;
+    background-color: white;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 12pt;
+    text-align: center;
+    color: #5F7584;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15)
+}
+
+.history-rightarrow {
+    height: 20px;
+}
+
+.schedule-now-btn {
+    margin: 0 5% 6% 5%;
+    background-color: #10EE2A;
+    text-align: center;
+    padding: 5% 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    cursor: pointer;
+}
+
+.schedule-now-txt {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 100;
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+.notification{
+    margin: 0;
+    padding: 0;
+    background-color: #10EE2A;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    z-index: 899;
+    top: 0;
+    right: 15%;
+    left: 15%;
+    width: 70%;
+    border-radius: 16px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .35);
+    transition-duration: 700ms;
+    opacity: 0;
+    /* display: none; */
+}
+
+.notification-txt{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-size: 10pt;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #000620;
+    /* color: white; */
+}

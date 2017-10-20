@@ -1,0 +1,30 @@
+<div class="list-bg">
+    <div class="appt-hist-list">
+        
+        <div class="top-title-align">
+            <div class="back-btn-outline" ui-sref="userhome">
+                <img class="backarrow" src="../assets/leftarrow.svg">
+                <div class="back-btn-txt">BACK</div>
+            </div>
+            <p class="form-label right">My Vehicles</p>
+        </div>
+        
+        <div class="my-vehicles-bg transition" ng-repeat="car in cars track by $index" id="car{{$index}}">
+            <div class="remove-align">
+                <img class="remove-car" src="../assets/x.svg" alt="" ng-click="removeCar($index)">
+            </div>
+            <div class="car-info">{{car.year}} {{car.make}}, {{car.model}}</div>
+        </div>
+
+        <div class="add-cars-divider"></div>
+        
+        <p class="add-car-form-label">Add a new vehicle</p>
+        <input ng-model="year" type="number" class="add-car-input" placeholder="Year" autocomplete="off" id="year">
+        <input ng-model="make" type="text" class="add-car-input" placeholder="Make" autocomplete="off" id="make">
+        <input ng-model="model" type="text" class="add-car-input" placeholder="Model" autocomplete="off" id="model">
+        <p class="add-car-err" id="add-car-err">All fields are required.</p>
+        <div class="add-vehicle" ng-click="addCar()">
+            <div class="submit-btn-txt">ADD VEHICLE</div>
+        </div>
+    </div>
+</div>

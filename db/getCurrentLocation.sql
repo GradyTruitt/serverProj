@@ -1,0 +1,1 @@
+SELECT currentlocation FROM users WHERE id = $1;

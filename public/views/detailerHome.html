@@ -1,0 +1,49 @@
+<div class="list-bg">
+    <div class="detailer-bg-container">
+        <div>
+            <h2 class="welcome-back-txt">{{currentUser.companyname}}</h2>
+            <div class="userHome-green-line"></div>
+        </div>
+
+        <div class="detailer-account-align">
+            <div class="detailer-feedback-rating pad-right">
+                <div class="detailer-feedback-txt">Account Balance</div>
+                <div class="detailer-acct-balance">${{balance}}</div>
+            </div>
+            <div class="detailer-feedback-rating pad-left">
+                <div class="detailer-feedback-txt">Feedback Rating</div>
+                <img class="detailer-home-rating-img" src="{{rating}}" alt="">
+            </div>
+        </div>
+
+        <div>
+                <p class="form-label center">Upcoming Appointments</p>
+            <div class="appt-schedule-align" ui-sref="detailerSchedule">
+                <div></div>
+                <div>
+                    <div class="appt-bids-btn-txt">{{ apptCount }} Appointments Today</div>
+                    <div class="next-appt-btn-txt">Next Appointment - {{ nextAppt }}</div>
+                </div>
+                <img class="appts-schedule-rightarrow" src="../assets/rightarrow.svg">
+            </div>
+        </div>
+
+        <div class="bottom-pad">
+            <p class="form-label center">Options</p>
+            <div class="appt-history-align" ui-sref="customerFeedback">
+                <div></div>
+                <div class="appt-history-btn-txt">Customer Feedback</div>
+                <img class="history-rightarrow" src="../assets/rightarrow.svg">
+            </div>
+            <div class="appt-history-align" ui-sref="detailerHistory">
+                <div></div>
+                <div class="appt-history-btn-txt">Appointment History</div>
+                <img class="history-rightarrow" src="../assets/rightarrow.svg">
+            </div>
+        </div>
+        
+        <div class="job-feed-btn" ui-sref="jobFeed">
+            <div class="job-feed-txt">JOB FEED</div>
+        </div>
+    </div>
+</div>

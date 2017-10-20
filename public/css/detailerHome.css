@@ -1,0 +1,129 @@
+
+.detailer-bg-container{
+    margin: 0;
+    padding: 10vh 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EFF0F5;
+    height: 90vh;
+}
+
+.center {
+    margin: 3% auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.appt-schedule-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px 0 0;
+    padding: 5%;
+    width: 90%;
+    background-color: white;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 12pt;
+    text-align: center;
+    color: #5F7584;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15)
+}
+
+.appts-schedule-rightarrow {
+    height: 20px;
+}
+
+.job-feed-btn {
+    margin: 0 5% 6% 5%;
+    background-color: #10EE2A;
+    text-align: center;
+    padding: 5% 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    cursor: pointer;
+}
+
+.job-feed-txt {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 100;
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+.next-appt-btn-txt {
+    margin: 0;
+    padding: 10px 0 0;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 9pt;
+    font-weight: 300;
+    font-style: italic;
+    color: #9CB4C4;
+}
+
+.detailer-feedback-rating {
+    margin: 5% 0;
+    padding: 0 5%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-family: Roboto;
+    font-size: 12pt;
+    width: 40%;
+    height: 70px;
+
+}
+
+.detailer-account-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailer-home-rating-img{
+    width: 100%;
+    padding: 0 0 10px;
+}
+
+.detailer-feedback-txt {
+    margin: 0;
+    padding: 15px 0 0;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 10pt;
+    font-weight: 300;
+    color: #9CB4C4;
+}
+
+.pad-right{
+    margin: 0 2.5% 0 5%;
+}
+
+.pad-left{
+    margin: 0 5% 0 2.5%;
+}
+
+.detailer-acct-balance{
+    margin: 0;
+    padding: 0 0 12px;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 15pt;
+    font-weight: 300;
+    color: #5F7584;
+}
+
+.bottom-pad{
+    margin-bottom: 5%;
+}

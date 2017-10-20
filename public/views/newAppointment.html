@@ -1,0 +1,51 @@
+<div class="form-bg">
+    <div class="form-field-top">
+        <div class="cars-list">
+            <div class="default-align"><p id="cars-default" class="default-option">Choose A Car</p><img id="uparrow1" class="uparrow" src="../assets/uparrow.svg" ng-click="hideCars()"><img id="downarrow1" class="downarrow" src="../assets/downarrow.svg" ng-click="showCars()"></div>
+            <div ng-repeat="car in cars" ng-click="selectCar({car: car})">
+                <p class="form-option" value="car1" >{{car.year}} {{car.make}} {{car.model}}</p>
+                <div class="form-line"></div>
+            </div>          
+        </div>
+        <p class="form-label">Set your appointment location</p>
+        <input ng-model="locationInput" type="text" class="location-input" placeholder="Current Location" autocomplete="off">
+        <p class="form-label">Select a date</p>        
+        <div id="calendar-container">
+            <div id="calendar-header">
+                <img ng-click="setDateBack()" class="leftarrow" src="../assets/leftarrow.svg" id="cal-arrow-left">
+                <div id="calendar-month-year"></div>
+                <img ng-click="setDate()" class="rightarrow" src="../assets/rightarrow.svg" id="cal-arrow-right">
+                <img id="downarrow4" class="downarrow" src="../assets/downarrow.svg" ng-click="showCal()">
+            </div>
+            <div id="calendar-dates"><div id="cal-table1"></div></div>
+            <img id="uparrow4" class="uparrow" src="../assets/uparrow.svg" ng-click="hideCal()">
+        </div>
+        <p class="form-label">Set a time slot</p> 
+        <select-times id="times" class="times-dir"></select-times>
+        <p class="form-label-center">Select a package</p> 
+        <div id="packages" class="packages">
+            <div class="package-divider"></div>
+            <div ng-repeat="package in packages track by $index">
+                <div class='package-align'>
+                    <div class="check-box" ng-click="checkBox({$index})"><div id="checked{{$index}}" class="checked"></div></div>
+                    <p class="package-title">{{ package.name }}</p>
+                    <img id="downarrow5{{$index}}" class="downarrow" src="../assets/downarrow.svg" ng-click="showDesc({$index})">
+                    <img id="uparrow5{{$index}}" class="uparrow" src="../assets/uparrow.svg" ng-click="hideDesc({$index})">
+                </div>
+                <div id="package-desc{{$index}}" class="desc-container">
+                    <p class="package-desc">{{ package.description }}</p>
+                </div>
+                <div class="package-divider"></div>
+            </div>
+        </div>
+        <textarea ng-model="instructions" type="text" class="instructions-input" placeholder="Special Instructions..." autocomplete="off"></textarea>
+    </div>
+    <div class="buttons-container-newAppt">
+        <div class="step-btn-newAppt" ui-sref="userhome">
+            <h2 class="btn-txt">BACK</h2>
+        </div>
+        <div id="next-btn-newAppt" class="next-btn-newAppt">
+            <h2 id="next-btn-txt" class="next-btn-txt">NEXT</h2>
+        </div>
+    </div>
+</div>

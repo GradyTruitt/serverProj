@@ -1,0 +1,104 @@
+<div class="bg-image-container flex-bottom">
+    <img class="login-logo" src="../assets/logo1-shadow.svg" alt="">
+    <div class="border-padding">
+
+
+        <!-- EMAIL SECTION -->
+        <div class="step1-container" id="step1-container">
+            <h3 class="signup-text">What's your email address?</h3>
+            <input ng-model="email" class="text-input" type="email" name="email" id="email" placeholder="Email Address" autocomplete="off">
+            <div class="buttons-container">
+                <div class="step-btn" ui-sref="welcome">
+                    <h2 class="btn-txt">BACK</h2>
+                </div>
+                <div class="step-btn" ng-click="step1({email: email})">
+                    <h2 class="btn-txt">NEXT</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PASSWORD SECTION -->
+        <div class="step-container" id="step2-container">
+            <h3 class="signup-text">Choose a password.</h3>
+            <input ng-model="password" class="text-input" type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+            <input ng-model="password2" class="text-input" type="password" name="password" id="password2" placeholder="Confirm Password" autocomplete="off">        
+            <div class="buttons-container">
+                <div class="step-btn" ng-click="step2Back()">
+                    <h2 class="btn-txt">BACK</h2>
+                </div>
+                <div class="step-btn" ng-click="step2({password: [password, password2]})">
+                    <h2 class="btn-txt">NEXT</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- USER DEFINITION SECTION -->
+        <div class="step-container" id="step3-container">
+            <h3 class="signup-text">Are you a customer or a Detailer?</h3>
+            <div class="user-flex-row">
+                <div class="customer-box" id="customer" ng-click="defineUser({user: 'customer'})"><h2 class="customer-txt2">Customer</h2></div>
+                <div class="detailer-box" id="detailer" ng-click="defineUser({user: 'detailer'})"><h2 class="customer-txt2">Detailer</h2></div>
+            </div>
+            <div class="buttons-container">
+                <div class="step-btn" ng-click="step3Back()">
+                    <h2 class="btn-txt">BACK</h2>
+                </div>
+                <div class="step-btn" ng-click="step4({user})">
+                    <h2 class="btn-txt">NEXT</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CUSTOMER SECTION -->
+        <div class="step-container" id="customer-container" >
+                <h3 class="signup-text">Vehicle information.</h3>
+                <div class="flex-row">
+                    <input class="car-input" type="number" id="year" ng-model="year" ng-change="restrict4({year})" placeholder="Year" autocomplete="off">
+                    <input class="car-input" type="text" name="make" id="" ng-model="make" placeholder="Make" autocomplete="off">
+                </div>
+                <input class="text-input" type="text" name="make" ng-model="model" id="" placeholder="Model" autocomplete="off">
+                <div class="buttons-container">
+                    <div class="step-btn" ng-click="customerBack()">
+                        <h2 class="btn-txt">BACK</h2>
+                    </div>
+                    <div class="step-btn" ng-click="step5({car: [year, make, model]})">
+                        <h2 class="btn-txt">NEXT</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CUSTOMER NAME -->
+            <div class="step-container" id="step5-container">
+                <h3 class="signup-text">What's your name?</h3>
+                <input ng-model="name" class="text-input" type="text" name="name" id="name" placeholder="First Name" autocomplete="off">
+                <div class="buttons-container">
+                    <div class="step-btn" ng-click="customerNameBack()">
+                        <h2 class="btn-txt">BACK</h2>
+                    </div>
+                    <div class="step-btn" ng-click="showCustomerInfo({name: name})">
+                        <h2 class="btn-txt">NEXT</h2>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- DETAILER SECTION -->
+        <div class="step-container" id="detailer-container">
+            <h3 class="signup-text">Company information.</h3>
+            <input class="text-input" type="text" name="company" id="company" ng-model="companyName" placeholder="Company Name" autocomplete="off">
+            <input class="text-input" type="number" name="company" id="zip" ng-model="zip" ng-change="restrict5({zip})" placeholder="Zipcode" autocomplete="off">
+            <div class="buttons-container">
+                <div class="step-btn" ng-click="detailerBack()">
+                    <h2 class="btn-txt">BACK</h2>
+                </div>
+                <div class="step-btn" ng-click="showCompanyInfo({company: [companyName, zip]})">
+                    <h2 class="btn-txt">NEXT</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

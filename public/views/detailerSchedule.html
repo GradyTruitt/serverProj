@@ -1,0 +1,37 @@
+<div class="schedule-bg-container">
+    <div class="detailer-schedule-container">
+        <div id="schedule-dates"></div>
+        <div class="calendar-footer">
+            <img ng-click="setDateBack()" class="calarrow" src="../assets/whiteleftarrow.svg" alt="">
+            <span id="schedule-month-year"></span>
+            <img ng-click="setDate()" class="calarrow" src="../assets/whiterightarrow.svg" alt="">
+        </div>
+    </div>
+    <div class="scheduled-appts-divider"></div>
+    <div class="schedule-back-btn-outline" ui-sref="detailerHome">
+        <img class="backarrow" src="../assets/leftarrow.svg">
+        <div class="back-btn-txt">BACK</div>
+    </div>
+
+        <div class="scheduled-appts-item" ng-repeat="appt in scheduledAppointments track by $index" id="scheduled-appts-item{{$index}}">
+            <div class="appt-time">{{ appt.apptTitle }}</div>
+            <div class="appt-address">{{ appt.location.address }}</div>
+            <!-- <div class="directions-btn" id="directions{{$index}}">
+                <div class="directions-txt">GET DIRECTIONS</div>
+            </div> -->
+            <div class="scheduled-appts-small-divider"></div>
+            <div class="appt-package">{{ appt.package }}</div>
+            <div class="appt-car">{{ appt.car.year }} {{ appt.car.make }} {{ appt.car.model }}</div>
+            <div class="appt-car">{{ appt.instructions }}</div>
+            <div class="cancel-btn" id="cancel-btn{{$index}}" ng-click="cancel($index)">
+                <div class="cancel-txt">CANCEL</div>
+            </div>
+            <div class="mark-complete-btn" id="mark-complete{{$index}}" ng-click="markComplete($index)">
+                <div class="mark-complete-txt">MARK AS COMPLETE</div>
+            </div>
+            <div class="confirm-complete-btn" id="confirm-complete{{$index}}" ng-click="confirmComplete($index)">
+                <div class="confirm-complete-txt">CONFIRM</div>
+            </div>
+        </div>
+    
+</div>

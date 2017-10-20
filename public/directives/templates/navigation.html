@@ -1,0 +1,26 @@
+<div class="nav-items-bg" id="nav-item-container" ng-click="hideNav()">
+    <div class="nav-items" id="nav-items-tray">
+        <div class="profile-container">
+            <img class="profile-icon" src="../../assets/profileicon.svg" alt="">
+            <div class="nav-profile-info">
+                <h1 class="profile-name" id="nav-profile-name"></h1>
+                <h1 class="profile-car" id="nav-profile-car"></h1>
+            </div>
+        </div>
+        <div id="nav-item-list" class="nav-item-list">
+            <div id="my-vehicles" class="nav-item" ui-sref="addCars" >MY VEHICLES</div>
+            <div id="my-vehicles" class="nav-item">SETTINGS</div>
+            <div id="my-vehicles" class="nav-item">PAYMENTS</div>
+            <div id="my-vehicles" class="nav-item">PROMOTIONS</div>
+            <!-- <div id="my-vehicles" class="nav-item">ALERTS</div>
+            <div id="my-vehicles" class="nav-item">HELP</div> -->
+        </div>
+        <div class="nav-item logout" ng-click="logout()">LOGOUT</div>
+    </div>
+</div>
+<div class="nav-container">
+    <div class="nav-align">
+        <img class="nav-logo" src="../assets/logo1-shadow.svg" alt="">
+        <img class="hamburger-menu" src="../assets/hamburgermenu.svg" ng-click="showNav()">
+    </div>
+</div>

@@ -1,0 +1,136 @@
+.box-shadow {
+    transition-duration: 300ms;
+}
+
+.bid-list-item {
+    margin: 8% 0 0;
+    padding: 8% 7%;
+    background-color: white;
+    font-family: Roboto;
+    font-size: 12pt;
+    border-radius: 4px 4px 0 0;
+}
+
+.appt-id {
+    display: none;
+}
+
+.appt-bid-package {
+    padding: 3% 0 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-style: italic;
+    font-family: Roboto;
+}
+
+.appt-bid-date {
+    font-size: 16pt;
+    color: #5F7584;
+}
+
+.appt-bid-price {
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Roboto;
+    font-size: 20pt;
+}
+
+.pending-bid-divider {
+    margin: 8% auto 3%;
+    height: 1px;
+    width: 100%;
+    background-color: #9CB4C4;
+}
+
+.details {
+    padding: 3% 0 2%;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-style: italic;
+    font-family: Roboto;
+}
+
+.appt-bid-detailer {
+    font-size: 14pt;
+    color: #5F7584;
+}
+
+.rating-img {
+    margin: 3% 0 0;
+    width: 120px;
+}
+
+.appt-bid-times {
+    padding: 3% 0 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Roboto;
+}
+
+.accept-bid {
+    margin: 8% auto 0;
+    text-align: center;
+    font-size: 14pt;
+    color: red;
+    display: none;
+}
+
+.accept-bid-btn {
+    margin: 0 ;
+    background-color: #5F7584;
+    text-align: center;
+    padding: 5% 0;
+    border-radius: 0 0 4px 4px;
+    border: none;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.cancel {
+    margin: 8% auto 0;
+    padding: 2% 0;
+    width: 50%;
+    border: 1px solid #9CB4C4;
+    border-radius: 4px;
+    display: none;
+}
+
+.cancel-txt {
+    text-align: center;
+    padding: 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Raleway;
+}
+
+.complete-accept-bid-btn-txt {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 100;
+    font-size: 20pt;
+    font-weight: 300;
+    color: #000620;
+}
+
+.accept-bid-btn-txt {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 100;
+    font-size: 20pt;
+    font-weight: 300;
+    color: white;
+}
+
+.complete-accept-bid-btn {
+    margin: 0 ;
+    background-color: #10EE2A;
+    text-align: center;
+    padding: 5% 0;
+    border-radius: 0 0 4px 4px;
+    border: none;
+    cursor: pointer;
+    cursor: pointer;
+    display: none;
+}

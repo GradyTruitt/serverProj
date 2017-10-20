@@ -1,0 +1,113 @@
+#calendar-container{
+    margin: 3% 7vw 5%;;
+    padding: 0;
+    background-color: white;
+    width: 86vw;
+    font-family: Roboto;
+    font-size: 12pt;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15)
+
+}
+
+#calendar-header {
+    padding: 15px 5vw 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#calendar-dates {
+    margin: 0 0 3% 0;
+    padding:0;
+}
+
+#calendar-month-year{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+    color: #5F7584;
+}
+
+.calendar-table {
+    margin: 0 auto;
+    padding: 0;
+    width: 84vw;
+    height: 10px;
+    margin-top: 5%;
+}
+
+.calendar-tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84vw;
+}
+
+.calendar-td {
+    margin: .5vw;
+    padding: 0;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    font-weight: 300;
+    background-color: white;
+    color: #5F7584;
+    border: 1px solid #9CB4C4;
+    border-radius: 4px;
+    height: 10.3vw;
+    width: 10.3vw;
+    cursor: pointer;
+}
+
+.day-letter {
+    margin: 0 0 2% 0;
+    padding: 0;
+    width: 12.3vw;
+    height: 12.3vw;
+    font-size: 16px;
+    font-weight: 300;
+    vertical-align: inherit;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5F7584;
+    border: 1px solid #5F7584;
+    border-radius: 0;
+}
+
+#day_today {
+    font-size: 20pt;
+}
+
+.leftarrow {
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.rightarrow {
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.empty {
+    margin: .5vw;
+    padding: 0;
+    height: 10.3vw;
+    width: 10.3vw;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+#cal-table1 {
+    margin: 0;
+    padding: 0;
+    display: none;
+}

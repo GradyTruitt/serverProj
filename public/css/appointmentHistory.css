@@ -1,0 +1,246 @@
+.list-bg{
+    margin: 0;
+    padding: 0;
+    background-color: #EFF0F5;
+    width: 100%;
+    min-height: 100vh;
+}
+.appt-hist-list{
+    margin: 0 auto;
+    padding: 90px 0 5%;
+    background-color: #EFF0F5;
+    width: 90%;
+}
+
+.top-title-align{
+    padding: 0 3% 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn-outline{
+    margin: 0;
+    padding: 2% 5% 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #9CB4C4;
+}
+
+.back-btn-txt {
+    margin: 0;
+    padding: 0 0 0 10px;
+    color: #9CB4C4;
+    font-weight: 300;
+    font-family: Raleway;
+}
+
+.backarrow{
+    margin: 0;
+    padding: 0;
+    height: 20px;
+}
+
+.right{
+    text-align: right;
+}
+
+.appt-history-list-item {
+    text-align: center;
+    margin: 5% 0 0;
+    padding: 8% 7% 5%;
+    background-color: white;
+    font-family: Roboto;
+    font-size: 12pt;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    transition-duration: .5s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.appt-hist-package {
+    padding: 3% 0 8%;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-style: italic;
+    font-family: Roboto;
+    text-align: left;
+}
+
+.appt-hist-date {
+    font-size: 16pt;
+    color: #5F7584;
+    text-align: left;
+}
+
+.appt-hist-price {
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Roboto;
+    font-size: 20pt;
+}
+
+.feedback-btn-outline{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.feedback-btn-txt {
+    margin: 0;
+    padding: 0;
+    color: #9CB4C4;
+    font-weight: 300;
+    font-family: Raleway;
+}
+
+.downarrow2{
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}
+
+.uparrow2{
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    display: none;
+}
+
+.feedback-div {
+    display: none;
+}
+
+.feedback-input {
+    margin: 3% auto 0;
+    padding: 15px 5% 55px;
+    background-color: white;
+    width: 90%;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+    border-radius: 4px;
+    color: #5F7584;
+    border: 1px solid #BAD0DF;
+    overflow-y: scroll;
+    resize: none;
+}
+
+.feedback-input::placeholder {
+    color: #9CB4C4;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.feedback-input:focus {
+    outline: none;
+}
+
+.submit-btn-outline{
+    margin: 2% 0 5%;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #5F7584;
+}
+
+.submit-btn-txt {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 300;
+    font-family: Raleway;
+    text-align: center;
+}
+
+.feedback-check-box {
+    margin: 2% 0;
+    padding: 3%;
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #BAD0DF;
+}
+
+.rating-txt {
+    font-size: 12pt;
+    color: #5F7584;
+    text-align: left;
+}
+
+.feedback-divider {
+    margin: 3% 0 5%;;
+    background-color: #9CB4C4;
+    height: 1px;
+    width: 100%;
+}
+
+.appt-hist-detailer {
+    margin: 0 0 4%;
+    color: #5F7584;
+
+}
+
+.detailer-rating-txt {
+    padding: 5% 0 2%;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Roboto;
+    font-size: 12pt;
+    text-align: left;
+}
+
+.submitted-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.feedback-submitted{
+    padding: 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Roboto;
+    font-size: 12pt;
+    text-align: left;
+}
+
+.check {
+    margin: 0 10px 0 0;
+    width: 20px;
+}
+
+.detailer-rating-img{
+    margin: 0 auto 2%;
+    width: 120px;
+    display: 0;
+}
+
+.remove-item {
+    margin: 0;
+    width: 14px;
+}
+
+.align-x {
+    margin: -5% -3% 0 0;
+    text-align: right;
+}
+
+.top-pad {
+    margin-top: 5%;
+}

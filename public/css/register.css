@@ -1,0 +1,164 @@
+.bg-image-container {
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/homebg.jpg');
+    background-size: cover;
+    background-repeat: none;
+    height: 100vh;
+    width: 100vw;
+    background-position-x: -170px;
+}
+
+.login-logo {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 150px;
+}
+
+.border-padding {
+    margin: 0;
+    padding: 10vh 10vw 5vh;
+}
+
+.flex-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-text {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15pt;
+}
+
+.customer-txt {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+.customer-txt2 {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+.customer-box {
+    margin:0;
+    margin-top: 30px;
+    padding:3% 5%;
+    width: 40%;
+    background-color: #10EE2A;
+    color: #000620;
+    border: 1px solid #10EE2A;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    transition-duration: 500ms;
+}
+
+.detailer-box {
+    margin:0;
+    margin-top: 30px;
+    padding:3% 5%;
+    width: 40%;
+    background-color: hsla(229, 100, 13, .5);
+    color: #10EE2A;
+    border: 1px solid #10EE2A;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    transition-duration: 500ms;
+}
+
+.btn-txt {
+    margin: 0;
+    padding: 0;
+    color: #000620;
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+.step-btn {
+    margin: 100px 0 0 0;
+    padding: 4% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    border-radius: 10px;
+    background-color: #10EE2A;
+    cursor: pointer;
+}
+
+.text-input {
+    margin-top: 20px;
+    padding: 3%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #10EE2A;
+    width: 94%;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 14pt;
+    color: white;
+    caret-color: #10EE2A;
+}
+
+.text-input::placeholder {
+    color: rgba(255, 255, 255, .65);
+}
+
+.car-input {
+    margin-top: 20px;
+    padding: 3%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #10EE2A;
+    width: 40%;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 14pt;
+    color: white;
+    caret-color: #10EE2A;
+}
+
+.car-input::placeholder {
+    color: rgba(255, 255, 255, .65);
+}
+
+.step-container {
+    display: none;
+    transition-duration: 250ms;
+}
+
+.step1-container {
+    transition-duration: 250ms;
+}
+

@@ -1,0 +1,326 @@
+.detailer-schedule-container{
+    margin: 0 0 5%;
+    padding: 55px 0 0;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 12pt;
+    border-radius: 4px;
+    background-color: #10EE2A;
+}
+
+.calarrow {
+    margin: 0;
+    padding: 3% 5%;
+    height: 20px;
+    cursor: pointer;
+    background-color: #10EE2A;
+    border: 1px solid #10EE2A;
+    border-radius: 4px;
+}
+
+.calendar-footer {
+    padding: 3% 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFF0F5;
+}
+
+#schedule-dates {
+    margin: 0;
+    padding:0;
+}
+
+#schedule-month-year{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+    color: #5F7584;
+}
+
+.schedule-table {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    margin-top: 5%;
+    background-color: #EFF0F5;
+}
+
+.schedule-days-row {
+    margin: -3px 0 2%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000620;
+    width: 100%;
+}
+
+
+.schedule-row {
+    margin: 0.6vw 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #EFF0F5;
+}
+
+.schedule-day-cell {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    font-weight: 300;
+    background-color: white;
+    color: #5F7584;
+    border: 1px solid #9CB4C4;
+    border-radius: 4px;
+    height: 12.7vw;
+    width: 12.7vw;
+    cursor: pointer;
+}
+
+.schedule-day-letter {
+    margin: 0;
+    padding: 0;
+    width: 13.12vw;
+    height: 13vw;
+    font-size: 16px;
+    font-weight: 300;
+    vertical-align: inherit;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000620;
+    border: 1px solid #000620;
+    border-radius: 0;
+}
+
+#day_today_schedule {
+    font-size: 20pt;
+}
+
+.leftarrow {
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.rightarrow {
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.empty-day {
+    margin: 0;
+    padding: 0;
+    height: 12.7vw;
+    width: 12.7vw;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+#cal-table1 {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.appointment {
+    margin: 0 0 0 2.5px;
+    margin-top: 3px;
+    padding: 0;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #10EE2A;
+    
+}
+
+.selected-appt {
+    margin: 0 0 0 -12px;
+    margin-top: 0px;
+    padding: 0;
+    border-radius: 2px;
+    width: 11.5vw;
+    height: 10px;
+    position: absolute;
+    background-color: #10EE2A;
+}
+
+.selected-appt2 {
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    border-radius: 2px;
+    width: 11.5vw;
+    height: 10px;
+    position: absolute;
+    background-color: #10EE2A;
+}
+
+.schedule-bg-container{
+    margin: 0 auto;
+    padding: 0 0 5%;
+    background-color: #EFF0F5;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.scheduled-appts-divider {
+    margin: 5% auto 6%;
+    width: 100%;
+    height: 1px;
+    background-color: #9CB4C4;
+}
+
+.scheduled-appts-item {
+    margin: 5% 5% 0;
+    padding: 8% 7% 5%;
+    background-color: white;
+    font-family: Roboto;
+    font-size: 12pt;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    transition-duration: 300ms;
+}
+
+.scheduled-appts-small-divider {
+    margin: 6% 0;
+    width: 20%;
+    height: 1px;
+    background-color: #5F7584;
+}
+
+.appt-address {
+    padding: 2% 0 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-style: italic;
+    font-family: Roboto;
+}
+
+.job-feed-instructions {
+    padding: 1% 0 0;
+    font-size: 12pt;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Roboto;
+}
+
+.appt-time {
+    font-size: 16pt;
+    color: #5F7584;
+}
+
+.appt-package {
+    font-size: 14pt;
+    color: #5F7584;
+}
+
+.appt-car {
+    padding: 2% 0 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Roboto;
+}
+
+.directions-btn {
+    margin: 5% 0;
+    width: 60%;
+    text-align: center;
+    padding: 3% 2%;
+    border-radius:4px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #9CB4C4;
+}
+
+.directions-txt {
+    margin: 0;
+    text-align: center;
+    color: #9CB4C4;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+.cancel-btn {
+    margin: 5% auto;
+    width: 60%;
+    text-align: center;
+    padding: 3% 2%;
+    border-radius:4px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #9CB4C4;
+    display:none;
+}
+
+.cancel-txt {
+    margin: 0;
+    text-align: center;
+    color: #9CB4C4;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+.mark-complete-btn {
+    margin: 8% 0 2% ;
+    text-align: center;
+    padding: 5% 0;
+    border-radius:4px;
+    border: none;
+    cursor: pointer;
+    background-color: #5F7584;
+}
+
+.mark-complete-txt {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: Raleway;
+    font-weight: 200;
+    font-size: 16pt;
+}
+
+.confirm-complete-btn {
+    margin: 5% 0 2% ;
+    text-align: center;
+    padding: 5% 0;
+    border-radius:4px;
+    border: none;
+    cursor: pointer;
+    background-color: #10EE2A;
+    display: none;
+}
+
+.confirm-complete-txt {
+    margin: 0;
+    text-align: center;
+    color: #000620;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+.schedule-back-btn-outline{
+    margin: 0 5%;
+    padding: 2% 5% 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #9CB4C4;
+    width: 20%;
+}

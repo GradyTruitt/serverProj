@@ -1,0 +1,25 @@
+<div class="list-bg">
+    <div class="appt-hist-list">
+        <div class="top-title-align">
+            <div class="back-btn-outline" ui-sref="detailerHome">
+                <img class="backarrow" src="../assets/leftarrow.svg">
+                <div class="back-btn-txt">BACK</div>
+            </div>
+            <p class="form-label right">Customer Feedback</p>
+        </div>
+        
+        <div class="customer-feedback-bg" ng-repeat="item in feedback">
+            <div class="customer-feedback-flex-row">
+                <div class="customer-feedback-username">{{item.username}} &nbsp;</div>
+                <div class="customer-feedback-date">- {{item.feedbackdate.month}} {{item.feedbackdate.day}}, {{item.feedbackdate.year}}</div>
+            </div>
+            <div class="customer-feedback-divider"></div>
+            <div class="rating-flex-row">
+                <div class="customer-feedback-rating">Rating: &nbsp;</div>
+                <img class="customer-feedback-rating-img" src="{{item.rating}}">
+            </div>
+            <div class="customer-feedback-txt">{{item.feedbacktxt}}</div>
+        </div>
+        
+    </div>
+</div>

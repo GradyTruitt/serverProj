@@ -1,0 +1,1 @@
+SELECT * FROM pendingbids WHERE userid = $1

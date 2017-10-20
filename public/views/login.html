@@ -1,0 +1,27 @@
+<div class="bg-image-container flex-bottom">
+        <img class="login-logo" src="../assets/logo1-shadow.svg" alt="">
+        <div class="border-padding">
+    
+    
+            <!-- EMAIL SECTION -->
+            <form class="email-login-container" id="email-login-container" autocomplete="off">
+                <input ng-model="username" class="text-input" type="email" name="email" id="email" placeholder="Email Address" autocomplete="off">
+            </form>
+    
+            <!-- PASSWORD SECTION -->
+            <form class="password-login-container" id="password-login-container" autocomplete="off">
+                <input ng-model="password" class="text-input" type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+            </form>
+                
+                <div class="buttons-container">
+                    <div class="step-btn" ui-sref="welcome">
+                        <h2 class="btn-txt">BACK</h2>
+                    </div>
+                    <div class="step-btn" ng-click="showUserInfo()">
+                        <h2 class="btn-txt">LOGIN</h2>
+                    </div>
+                </div>
+    
+    
+        </div>
+    </div>

@@ -1,0 +1,92 @@
+.complete-bg-image-container {
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/homebg.jpg');
+    background-size: cover;
+    background-repeat: none;
+    height: 100vh;
+    width: 100vw;
+    background-position-x: -170px;
+    background-position-y: 20px;
+}
+
+.finish-btn {
+    margin: 40% 15% 0;
+    width: 70%;
+    background-color: #10EE2A;
+    text-align: center;
+    padding: 3% 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition-duration: 500ms;
+}
+
+.finish-btn-txt {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 100;
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+.appointment-submitted {
+    margin: 0 12%;
+    padding: 0;
+    color: #C5C5C5;
+    font-family: Raleway;
+    font-size: 11pt;
+    font-weight: 100;
+    line-height: 16pt;
+    text-align: center;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.appointment-submitted-heading {
+    margin: 0 10%;
+    padding: 0;
+    color: white;
+    font-family: Raleway;
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.complete-divider {
+    margin: 6% auto;
+    width: 15%;
+    height: 2px;
+    background-color: #10EE2A;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.logo-animation-align {
+    margin: 0 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-logo {
+    width: 180px;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.dot {
+    margin-bottom: 50px;
+    margin-left: 30.5%;
+    height: 12px;
+    width: 8px;
+    border-radius: 4px;
+    background-color: #10EE2A;
+    transition-duration: 1s;
+    opacity: 0;
+}

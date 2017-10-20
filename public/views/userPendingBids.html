@@ -1,0 +1,40 @@
+<div class="list-bg">
+    <div class="appt-hist-list">
+        <div class="top-title-align">
+            <div class="back-btn-outline" ui-sref="userhome">
+                <img class="backarrow" src="../assets/leftarrow.svg">
+                <div class="back-btn-txt">BACK</div>
+            </div>
+            <p class="form-label right">Pending Bids</p>
+        </div>
+
+            <div class="box-shadow bid-box index{{ bid.id }}" ng-repeat="bid in userPendingBids track by $index">
+                <div class="bid-list-item">
+                    <div class="flex-row">
+                        <div>
+                            <div class="appt-bid-date">{{ bid.appointmentdate.month }} {{ bid.appointmentdate.day }}</div>
+                            <div class="appt-bid-package">{{ bid.package }}</div>
+                        </div>
+                        <div class="appt-bid-price">${{ bid.bidprice }}</div>
+                    </div>
+                    <div class="pending-bid-divider"></div>
+                    <div class="details">Details:</div>
+                    <div class="appt-bid-detailer">{{ bid.detailername }}</div>
+                    <img class="rating-img" src="{{ bid.detailerrating }}">
+                    <div class="appt-bid-times">{{ bid.starttime }} - {{ bid.endtime }}</div>
+                    <div class="accept-bid" id="accept-bid-for{{$index}}">Accept this bid for ${{ bid.bidprice }}.00?</div>
+                    <div class="cancel" id="cancel-btn{{$index}}" ng-click="cancelBid($index)">
+                        <div class="cancel-txt">CANCEL</div>
+                    </div>
+                </div>
+                <div class="accept-bid-btn" id="accept-bid-btn{{$index}}" ng-click="acceptBid($index)">
+                    <div class="accept-bid-btn-txt">ACCEPT BID</div>
+                </div>
+                <div class="complete-accept-bid-btn" id="complete-accept-bid-btn{{$index}}" ng-click="openPayment($index)">
+                    <div class="complete-accept-bid-btn-txt">CONFIRM</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

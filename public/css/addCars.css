@@ -1,0 +1,96 @@
+.add-car-form-label {
+    margin: 5% 7% 0;
+    padding: 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-style: italic;
+    font-family: Roboto;
+    font-size: 12pt;
+    text-align: left;
+    width: 82%;
+}
+
+.add-car-input {
+    margin: 3% 5% 3%;
+    padding: 15px 5%;
+    background-color: white;
+    width: 80%;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    color: #5F7584;
+    border: none;
+}
+
+
+.add-car-input::placeholder {
+    color: #9CB4C4;
+    font-family: Roboto;
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.add-car-input:focus {
+    outline: none;
+}
+
+.my-vehicles-bg {
+    margin: 5% auto;
+    padding: 7%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    background-color: white;
+}
+
+.car-info {
+    padding: 3% 0 0;
+    font-size: 16pt;
+    color: #5F7584;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+.remove-align {
+    margin: -3% -3% 0 0;
+    text-align: right;
+}
+
+.remove-car {
+    width: 15px;
+}
+
+.add-cars-divider {
+    margin: 10% 0;
+    width: 100%;
+    height: 1px;
+    background-color: #9CB4C4;
+}
+
+.add-vehicle{
+    margin: 3% 5% 5%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #5F7584;
+}
+
+.add-car-err {
+    margin: 3% 0;
+    padding: 0;
+    color: red;
+    font-weight: 200;
+    font-style: italic;
+    font-family: Roboto;
+    font-size: 10pt;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.transition {
+    transition-duration: 300ms;
+}

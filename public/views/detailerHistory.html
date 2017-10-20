@@ -1,0 +1,18 @@
+<div class="list-bg">
+    <div class="appt-hist-list">
+        <div class="top-title-align">
+            <div class="back-btn-outline" ui-sref="detailerHome">
+                <img class="backarrow" src="../assets/leftarrow.svg">
+                <div class="back-btn-txt">BACK</div>
+            </div>
+            <p class="form-label right">Appointment History</p>
+        </div>
+        <div class="appt-hist-list-item" ng-repeat="appt in historyList track by $index">
+            <div>
+                <div class="appt-hist-date">{{ appt.apptmonth }} {{ appt.apptday }}, {{ appt.apptyear }}</div>
+                <div class="appt-hist-package">{{ appt.package }}</div>
+            </div>
+            <div class="appt-hist-price">${{ appt.price }}</div>
+        </div>
+    </div>
+</div>

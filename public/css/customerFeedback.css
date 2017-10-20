@@ -1,0 +1,65 @@
+.customer-feedback-bg {
+    margin: 5% auto;
+    padding: 7%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    background-color: white;
+}
+
+.customer-feedback-username {
+    font-size: 12pt;
+    color: #5F7584;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+.customer-feedback-date {
+    padding: 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Roboto;
+    font-size: 10pt;
+}
+
+.customer-feedback-rating{
+    padding: 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Roboto;
+    font-size: 10pt;
+}
+
+.customer-feedback-flex-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.customer-feedback-txt {
+    padding: 4% 0 0;
+    font-size: 11pt;
+    color: #5F7584;
+    font-weight: 300;
+    font-family: Roboto;
+    line-height: 15pt;
+}
+
+.customer-feedback-divider {
+    margin: 2% 0 0;
+    height: 1px;
+    width: 100%;
+    background-color: #9CB4C4;
+}
+
+.customer-feedback-rating-img{
+    width: 120px;
+}
+
+.rating-flex-row {
+    margin: 3% 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

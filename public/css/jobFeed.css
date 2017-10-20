@@ -1,0 +1,154 @@
+.new-appt-list{
+    margin: 0 auto;
+    padding: 90px 0 5%;
+    background-color: #EFF0F5;
+    width: 90%;
+}
+
+.box-shadow {
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    transition-duration: 500ms;
+    
+}
+
+.date-time-align {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.new-appt-list-item {
+    margin: 8% 0 0;
+    padding: 8% 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-family: Roboto;
+    font-size: 12pt;
+    border-radius: 4px 4px 0 0;
+}
+
+.job-feed-address {
+    padding: 2% 0 0;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-style: italic;
+    font-family: Roboto;
+}
+
+.job-feed-instructions {
+    padding: 1% 0 0;
+    font-size: 12pt;
+    color: #9CB4C4;
+    font-weight: 200;
+    font-family: Roboto;
+}
+
+.job-feed-date {
+    font-size: 16pt;
+    color: #5F7584;
+}
+
+.job-feed-package {
+    font-size: 14pt;
+    color: #5F7584;
+}
+
+.job-feed-time {
+    padding-left: 10px;
+    font-size: 14pt;
+    font-weight: 300;
+    color: #5F7584;
+}
+
+.job-feed-divider {
+    margin: 6% 0;
+    width: 20%;
+    height: 1px;
+    background-color: #5F7584;
+}
+
+.bid-input-align {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    display: none;
+    opacity: 0;
+    transition-duration: 300ms;
+}
+
+.bid-input {
+    margin: 0 0 0 5px;
+    padding: 10px 2% 4px;
+    width: 40%;
+    font-family: Roboto;
+    font-size: 16pt;
+    font-weight: 300;
+    border-radius: 4px;
+    color: #5F7584;
+    border: none;
+    border-bottom: 2px solid #5F7584;
+    caret-color: #10EE2A;
+}
+
+.bid-input::placeholder {
+    color: #9CB4C4;
+    font-family: Roboto;
+    font-size: 16pt;
+    font-weight: 300;
+    
+}
+
+.bid-input:focus {
+    outline: none;
+}
+
+.place-bid-btn {
+    margin: 0 ;
+    background-color: #5F7584;
+    text-align: center;
+    padding: 5% 0;
+    border-radius: 0 0 4px 4px;
+    border: none;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.complete-bid-btn-txt {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 100;
+    font-size: 20pt;
+    font-weight: 300;
+    color: #000620;
+}
+
+.place-bid-btn-txt {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 100;
+    font-size: 20pt;
+    font-weight: 300;
+    color: white;
+}
+
+.complete-bid-btn {
+    margin: 0 ;
+    background-color: #10EE2A;
+    text-align: center;
+    padding: 5% 0;
+    border-radius: 0 0 4px 4px;
+    border: none;
+    cursor: pointer;
+    cursor: pointer;
+    display: none;
+}
+
+.mark-complete-txt{
+    
+}

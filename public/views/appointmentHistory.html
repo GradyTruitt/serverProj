@@ -1,0 +1,54 @@
+<div class="list-bg">
+    <div class="appt-hist-list">
+        <div class="top-title-align">
+            <div class="back-btn-outline" ui-sref="userhome">
+                <img class="backarrow" src="../assets/leftarrow.svg">
+                <div class="back-btn-txt">BACK</div>
+            </div>
+            <p class="form-label right">Appointment History</p>
+        </div>
+        <div class="appt-history-list-item" ng-repeat="appt in historyList track by $index" id="hist-list-item{{$index}}" >
+            <div class="align-x">
+                <img src="../assets/x.svg" class="remove-item" id="remove-item{{$index}}" ng-click="removeItem($index)">
+            </div>
+            <div class="flex-row top-pad">
+                <div>
+                    <div class="appt-hist-date">{{ appt.apptmonth }} {{ appt.apptday }}, {{ appt.apptyear }}</div>
+                    <div class="appt-hist-package">{{ appt.package }}</div>
+                </div>
+                <div class="appt-hist-price">${{ appt.price }}</div>
+            </div>
+            <div class="feedback-divider" id="feedback-divider{{$index}}"></div>
+            <div class="appt-hist-detailer">{{ appt.detailername }}</div>
+            <img class="detailer-rating-img" src="{{ appt.feedback }}" id="rating-img{{$index}}">
+            <div class="feedback-btn-outline" id="leave-feedback{{$index}}">
+                <div class="feedback-btn-txt">LEAVE FEEDBACK</div>
+                <img class="uparrow2" src="../assets/uparrow.svg" id="uparrow{{$index}}" ng-click="hideFeedback($index)">
+                <img class="downarrow2" src="../assets/downarrow.svg" id="downarrow{{$index}}" ng-click="showFeedback($index)">
+            </div>
+            <div class="feedback-div" id="feedback-div{{$index}}">
+                <div class="detailer-rating-txt">Detailer Rating:</div>
+                <div class="flex-row rating">
+                    <div value="1" class="feedback-check-box" ng-click="checkBox($index, $event)"><div id="checked1{{$index}}" class="checked"></div></div>
+                    <div class="rating-txt">1</div>
+                    <div value="2" class="feedback-check-box" ng-click="checkBox($index, $event)"><div id="checked2{{$index}}" class="checked"></div></div>
+                    <div class="rating-txt">2</div>
+                    <div value="3" class="feedback-check-box" ng-click="checkBox($index, $event)"><div id="checked3{{$index}}" class="checked"></div></div>
+                    <div class="rating-txt">3</div>
+                    <div value="4" class="feedback-check-box" ng-click="checkBox($index, $event)"><div id="checked4{{$index}}" class="checked"></div></div>
+                    <div class="rating-txt">4</div>
+                    <div value="5" class="feedback-check-box" ng-click="checkBox($index, $event)"><div id="checked5{{$index}}" class="checked"></div></div>
+                    <div class="rating-txt">5</div>
+                </div>
+                <textarea id="input{{$index}}" type="text" class="feedback-input" placeholder="Leave Feedback..." autocomplete="off"></textarea>        
+                <div class="submit-btn-outline" ng-click="submitFeedback($index)" id="submit-feedback{{$index}}">
+                    <div class="submit-btn-txt">SUBMIT FEEDBACK</div>
+                </div>
+            </div>
+            <div class="submitted-align" id="submitted{{$index}}">
+                <img class="check" src="../assets/check.svg" alt="">
+                <div class="feedback-submitted">Feedback Submitted!</div>
+            </div>
+        </div>
+    </div>
+</div>
