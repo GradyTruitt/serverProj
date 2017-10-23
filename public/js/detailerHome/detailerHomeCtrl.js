@@ -25,7 +25,7 @@ angular.module('detailApp').controller('detailerHomeCtrl', function($scope, $htt
                 if ($scope.rating >= 5) {
                     $scope.rating = '../assets/5st.svg';}
                 if ($scope.rating === null){ 
-                    $scope.rating = '../assets/blank.png'; }
+                    $scope.rating = '../assets/0st.svg'; }
 
 
 

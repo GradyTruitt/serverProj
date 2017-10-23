@@ -65,6 +65,23 @@
     flex-direction: column;
 }
 
+.appt-hist-list-item {
+    text-align: center;
+    margin: 5% 0 0;
+    padding: 8% 7% 5%;
+    background-color: white;
+    font-family: Roboto;
+    font-size: 12pt;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .15);
+    transition-duration: .5s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
 .appt-hist-package {
     padding: 3% 0 8%;
     color: #9CB4C4;

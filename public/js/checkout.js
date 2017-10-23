@@ -3074,7 +3074,6 @@ StripeCheckout.require.define({
                     } else {
                         checkout = new Checkout(new TokenCallback(options), this.constructorOptions, options)
                     }
-/*--------------*/  console.log(mergedOptions)
                     this.trackOpen(checkout, mergedOptions);
                     this.trackViewport();
                     return checkout.open(mergedOptions)
@@ -3196,7 +3195,6 @@ StripeCheckout.require.define({
             Button = function () {
                 Button.totalButtonId = 0;
                 Button.load = function (app) {
-                    console.log(app);
                     var button, el, element;
                     element = $$("stripe-button");
                     element = function () {

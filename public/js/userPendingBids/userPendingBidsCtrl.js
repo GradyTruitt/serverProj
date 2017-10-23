@@ -41,7 +41,7 @@ angular.module('detailApp').controller('userPendingBidsCtrl', function($scope, $
                     if (parseFloat($scope.userPendingBids[key2].detailerrating) >= 5) {
                         $scope.userPendingBids[key2].detailerrating = '../assets/5st.svg';}
                     if ($scope.userPendingBids[key2].detailerrating === null){ 
-                        $scope.userPendingBids[key2].rating = '../assets/blank.png'; }
+                        $scope.userPendingBids[key2].rating = '../assets/0st.svg'; }
                 }
 
     };

@@ -11,8 +11,7 @@ angular.module('detailApp').controller('addCarsCtrl', function($scope, $state, $
         $scope.getCars = function() {
             $http.get('/api/users/getCars').then(function(res) { 
                 document.getElementById('nav-profile-car').innerHTML = res.data[0].year + " " + res.data[0].make + " " + res.data[0].model; 
-                $scope.cars = res.data;
-                console.log($scope.cars);         
+                $scope.cars = res.data;       
             });
         };
     

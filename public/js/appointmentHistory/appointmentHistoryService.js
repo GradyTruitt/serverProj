@@ -1,7 +1,6 @@
 angular.module('detailApp').service('appointmentHistoryService', function($http){
 
     this.showFeedback = function(index) {
-        console.log(index);
         document.getElementById('uparrow'+index).style.display = "block";
         document.getElementById('downarrow'+index).style.display = "none";
         document.getElementById('feedback-div'+index).style.display = "block";
